@@ -34,4 +34,4 @@ for n, line in enumerate(input):
     if (counts['red'] <= 12) and (counts['green'] <= 13) and (counts['blue'] <= 14):
         answer += game_number
 
-print(answer)
+print(answer)  # 2685

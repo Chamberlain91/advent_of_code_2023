@@ -18,4 +18,4 @@ for line in input:
     digits = [c for c in list(line) if c.isdigit()]
     sum += int("".join([digits[0], digits[-1]]))
 
-print(sum)
+print(sum)  # 53194

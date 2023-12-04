@@ -54,7 +54,6 @@ for line in input:
 
         i += 1
 
-    print(digits)
     sum += int("".join([digits[0], digits[-1]]))
 
 print(sum)  # 54249

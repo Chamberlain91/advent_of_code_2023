@@ -1,6 +1,6 @@
 # Christopher Chamberlain
 # Advent of Code 2023
-# Day 2.1
+# Day 2.2
 
 import math
 
@@ -11,8 +11,7 @@ with open("day_02_input.txt", encoding='utf-8') as file:
 answer = 0
 
 # Game N: subset 1; subset 2;
-for n, line in enumerate(input):
-    header, subsets = line.split(':')
+for line in input:
 
     counts = {
         'red': 0,
@@ -20,10 +19,12 @@ for n, line in enumerate(input):
         'green': 0,
     }
 
-    # Parse the game number
+    header, subsets = line.split(':')
+
+    # Parse the game number.
     game_number = int(header[5:])
 
-    # Parse the game subsets
+    # Parse the game subsets.
     subsets = subsets.strip().split(';')
 
     for subset in subsets:
@@ -35,4 +36,4 @@ for n, line in enumerate(input):
     # Compute "power"
     answer += math.prod(counts.values())
 
-print(answer)
+print(answer)  # 83707
